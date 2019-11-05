@@ -39,6 +39,7 @@ const proxyServer = http.createServer(function (req, res) {
     "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, X-User-Id, X-Auth-Token, X-Auth-Header"
   };
 
+
   if (req.method === "OPTIONS") {
     res.writeHead(204, headers);
     res.end("ok");
